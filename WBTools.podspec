@@ -10,7 +10,9 @@ Pod::Spec.new do |s|
   s.license      = { :type => "MIT", :file => "LICENSE" }
   s.author       = { "王彬" => "1462999792@qq.com" }
   s.source       = { :git => "https://github.com/wbinWang/tools.git", :tag => "#{s.version}" }
-  #https://github.com/wbinWang/tools/tree/master/Tools/Tools/toolsCategory
-  s.source_files  = "tools/Tools/Tools/toolsCategory/*.{h,m}"
-  s.exclude_files = "Classes/Exclude"
+  s.source_files  = "wb_test/*.{h,m}"
+  s.platform     = :ios
+  s.platform     = :ios, "8.0"
+  s.ios.deployment_target = "8.0"
+  s.frameworks = 'UIKit'
 end
